@@ -5,7 +5,7 @@ times <- targetData[ ,2]
 x <- as.POSIXct(paste(dates, times))
 y <- targetData[ ,3]
 
-par(mfrow = c(2,4))
+par(mfcol = c(2,4))
 
 plot(x, y, type = "n", xlab = "", ylab = "Global Active Power (kilowatts)")
 lines(x, y, type = "l")
